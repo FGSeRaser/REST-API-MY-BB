@@ -21,9 +21,10 @@ Logging – Debug- & Error-Logging im api/logs/ Verzeichnis
 │   └── logs/                 # Log-Verzeichnis (CHMOD 777)
 └── inc/plugins/
     └── api.php               # Das Key-Management-Plugin
+```
 🚀 Installation
-
-    Plugin hochladen: Kopiere die api.php in deinen inc/plugins/ Ordner.
+```text
+    Plugin hochladen: Kopiere die Datein richtig in dein Root, beachte die Struktur.
 
     Aktivieren: Gehe im MyBB Admin-Panel (ACP) auf "Plugins" und aktiviere das MyBB API Plugin.
 

@@ -2,8 +2,9 @@
 Dieses Projekt bietet eine extrem schnelle und sichere Möglichkeit, Threads in einem MyBB-Forum über eine REST-Schnittstelle zu erstellen.
 Ideal für Automatisierungen, mobile Apps oder Cross-Posting-Tools.
 
-✨ Hauptfunktionen
 
+## ✨ Hauptfunktionen
+```text
 High Performance – Direkte Datenbankverbindung (umgeht den schweren MyBB-Core)
 
 Secure – Authentifizierung via API-Key (gebunden an MyBB-User)
@@ -11,7 +12,7 @@ Secure – Authentifizierung via API-Key (gebunden an MyBB-User)
 Easy Integration – Plugin zur Key-Verwaltung im UserCP
 
 Logging – Debug- & Error-Logging im api/logs/ Verzeichnis
-
+```
 ## 📂 Installation & Verzeichnisstruktur
 ```text
 .
@@ -51,7 +52,10 @@ Beispiel JSON Payload
   "message": "Dies ist der Inhalt des Threads.",
   "allow_mycode": true
 }
-🖥 Terminal Test
+```
+
+## 🖥 Terminal Test
+```text
 curl -X POST https://deine-domain.de/api/threads_create.php \
      -H "Content-Type: application/json" \
      -d '{
@@ -62,9 +66,9 @@ curl -X POST https://deine-domain.de/api/threads_create.php \
           "message": "Dieser Thread wurde per API-Test erstellt."
          }'
 ```
-```text
-🔒 Sicherheit
 
+## 🔒 Sicherheit
+```text
 Schutz vor SQL-Injections durch real_escape_string()
 
 API-Key-Erstellung auf Admin-Gruppe (ID 4) beschränkt
@@ -72,6 +76,7 @@ API-Key-Erstellung auf Admin-Gruppe (ID 4) beschränkt
 Empfehlung: Nur über HTTPS verwenden
 ```
 
-📜 Lizenz
-
+## 📜 Lizenz
+```text
 MIT License
+```
